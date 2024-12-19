@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s, all 0.3s;
+}
+
+/* Light Mode */
+body.light {
+    background-color: #ecf0f1; /* Light background for entire page */
+    color: #2c3e50; /* Dark text for readability */background-image: url(./assets/in.jpg);
+}
+
+body.light .instructions {
+    background-color: #ffffff; /* White background for instructions */
+    color: #2c3e50; /* Dark text for instructions */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+body.light h1, body.light h2, body.light h3 {
+    color: #f39c12; /* Yellow color for headings */
+}
+
+body.light ul li {
+    background-color: #1abc9c; /* Light teal background for list items */
+    color: #2c3e50; /* Dark text for readability */
+}
+
+body.light ul li:hover {
+    background-color: #16a085; /* Darker teal on hover */
+}
+
+body.light ul li:active {
+    background-color: #1e7f70; /* Even darker teal on click */
+}
+
+/* Buttons in Light Mode */
+button {
+    background-color: #ff5722; /* Orange background for buttons */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in-out, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff784e; /* Lighter orange on hover */
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #e64a19; /* Darker orange on click */
+    transform: scale(0.9);
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #2c3e50; /* Dark background for entire page */
+    color: #ecf0f1; /* Light text for readability */ background-image: url('./assets/in2.avif');
+}
+
+body.dark .instructions {
+    background-color: #34495e; /* Dark gray background for instructions */
+    color: #ecf0f1; /* Light text for instructions */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body.dark h1, body.dark h2, body.dark h3 {
+    color: #f39c12; /* Yellow color for headings */
+}
+
+body.dark ul li {
+    background-color: #34495e; /* Dark gray background for list items */
+    color: #ecf0f1; /* Light text for readability */
+}
+
+body.dark ul li:hover {
+    background-color: #1abc9c; /* Lighter teal on hover */
+}
+
+body.dark ul li:active {
+    background-color: #16a085; /* Darker teal on click */
+}
+
+/* Buttons in Dark Mode */
+button {
+    background-color: #ff5722; /* Orange background for buttons */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in-out, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff784e; /* Lighter orange on hover */
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #e64a19; /* Darker orange on click */
+    transform: scale(0.9);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .instructions {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .instructions h1 {
+        font-size: 2rem;
+    }
+
+    .instructions h2 {
+        font-size: 1.7rem;
+    }
+
+    .instructions h3 {
+        font-size: 1.3rem;
+    }
+
+    .instructions p {
+        font-size: 1rem;
+    }
+
+    .instructions ul li {
+        font-size: 1rem;
+    }
+}
+/* Light Mode */
+body.light .instructions-page {
+/* Replace with your light mode background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    color: #2c3e50; /* Dark text for readability */
+    transition: background-color 0.3s, color 0.3s, all 0.3s;
+    
+}
+
+body.light .instructions {
+    background-color: #ffffff; /* White background for instructions */
+    color: #2c3e50; /* Dark text for instructions */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+/* Dark Mode */
+body.dark .instructions-page {
+    background-image: url('./assets/in2.avif'); /* Replace with your dark mode background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    color: #ecf0f1; /* Light text for readability */
+    animation: fadeIn .5s ease-in-out;
+    
+    
+}
+
+body.dark .instructions {
+    background-color: #34495e; /* Dark gray background for instructions */
+    color: #ecf0f1; /* Light text for instructions */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.instructions {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  .instructions {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s, all 0.3s;
+  }

@@ -1,0 +1,111 @@
+/* Specific styles for the Settings page */
+.Setting-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Setting {
+    background-color: #f6265a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Light mode styles */
+.light-mode .Setting {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Dark mode styles */
+.dark-mode .Setting {
+    background-color: #34495e;
+    color: #0c8baa;
+}
+
+/* Button styling */
+.Setting button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, background-color 0.3s ease;
+}
+
+.Setting button:hover {
+    background-color: #ff784e;
+    transform: scale(1.1);
+}
+
+.Setting button:active {
+    background-color: #e64a19;
+    transform: scale(0.9);
+}
+
+/* Inputs and Labels */
+.Setting label {
+    font-size: 1.2rem;
+    display: block;
+    margin: 15px 0;
+}
+
+.Setting input[type="checkbox"], .Setting input[type="radio"], .Setting input[type="number"] {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .Setting {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .Setting h2 {
+        font-size: 1.8rem;
+    }
+
+    .Setting h3 {
+        font-size: 1.4rem;
+    }
+
+    .Setting label {
+        font-size: 1rem;
+    }
+
+    .Setting button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+/* Dark Mode */
+body.dark .Setting {
+    background-color: #2c3e50; /* Dark background for entire page */
+    color: #ecf0f1; /* Light text for readability */
+}
+
+body.dark .Setting-page {
+    background-color: #34495e; /* Dark gray background for instructions */
+    color: #ecf0f1; /* Light text for instructions */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-image: url(./assets/set.avif);animation: fadeIn .5s ease-in-out;
+}
+
+
+  /* Page Animations */
+  .Setting {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+body {
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s, all 0.3s;
+}

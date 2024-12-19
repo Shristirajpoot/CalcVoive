@@ -1,0 +1,336 @@
+header {
+  padding-bottom: 20px; /* Make space below the header */
+}
+
+.calculator-wrapper {
+  margin-top: 40px; /* Add margin to push the calculator down */
+}
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Page Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #5c6bc0;
+    color: rgb(109, 19, 19);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3f51b5;
+  }
+  
+  /* Light and Dark Mode */
+  body.dark-mode {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-mode header {
+    background-color: #222;
+  }
+  
+  body.dark-mode .calculator {
+    background-color: #444;
+  }
+  
+  body.dark-mode .settings,
+  body.dark-mode .instructions,
+  body.dark-mode .about {
+    background-color: #555;
+    color: white;
+  }
+  
+  body.dark-mode button {
+    background-color: #3f51b5;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+    }
+  
+    .calculator,
+    .settings,
+    .instructions,
+    .about {
+      padding: 1rem;
+    }
+  }
+  .calculator {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calculator input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .calculator button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #e8e8e8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calculator button:hover {
+    background-color: #d1d1d1;
+  }
+  
+  .voice-button {
+    background-color: #ff4081;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .voice-button:hover {
+    background-color: #f50057;
+  }
+  .instructions {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .instructions h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .instructions h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .instructions ul {
+    margin: 1rem 0;
+    padding-left: 20px;
+  }
+  
+  .instructions ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .settings {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .settings h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .settings label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .settings input[type="checkbox"],
+  .settings input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .settings input[type="number"] {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+  }
+  
+  .settings button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .settings button:hover {
+    background-color: #3f51b5;
+  }
+  .about {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .about h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .about ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding-left: 20px;
+  }
+  
+  .about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about a {
+    color: #5c6bc0;
+    text-decoration: none;
+  }
+  
+  .about a:hover {
+    text-decoration: underline;
+  }
+  
+  .about h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  body.dark-mode header {
+    background-color: #222;
+  }
+  
+  body.dark-mode .calculator {
+    background-color: #444;
+    color: white;
+  }
+  
+  body.dark-mode .settings,
+  body.dark-mode .instructions,
+  body.dark-mode .about {
+    background-color: #555;
+    color: white;
+  }
+  
+  body.dark-mode button {
+    background-color: #3f51b5;
+  }
+  body.light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  /* styles.css */
+.graph-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.graph-container h2 {
+  margin-bottom: 20px;
+}
+
+.graph-container canvas {
+  max-width: 100%;
+  height: auto;
+}
