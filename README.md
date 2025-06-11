@@ -1,87 +1,143 @@
-# Voice Calculator
+# 🎙️ CalcVoice - Calculate with Your Voice! 🧮  
+> A smart, accessible, and voice-powered calculator made with ❤️ using React & Web APIs.
 
-[![Star](https://img.shields.io/github/stars/Shristirajpoot/CalcVoice?style=social)](https://github.com/Shristirajpoot/CalcVoice)
+![GitHub Repo stars](https://img.shields.io/github/stars/Shristirajpoot/calcvoiVe?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/Shristirajpoot/calcvoiVe?color=brightgreen)
+![Built with](https://img.shields.io/badge/Built%20with-React%20%2B%20Web%20Speech%20API-blue)
 
-An interactive voice-controlled calculator for performing mathematical calculations. The app allows users to give voice commands to perform operations like addition, subtraction, multiplication, and division. It also features a responsive design, light/dark mode toggle, and decimal precision control.
+---
 
-## Table of Contents
-1. [Getting Started](#getting-started)
-2. [Usage](#usage)
-3. [Features](#features)
-4. [Installation](#installation)
-5. [How to Contribute](#how-to-contribute)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
+## 🌟 Overview
 
-## Features:
-- **Voice input for calculations**: Perform basic and advanced math operations using voice commands.
-- **Light and Dark Mode**: Switch between light and dark themes based on your preference.
-- **Decimal Precision**: Control the number of decimal places in your calculations.
-- **Responsive Design**: Fully optimized for mobile and desktop devices.
-- **Voice Feedback**: Get voice feedback for results and operations.
-- **Easy-to-Use**: Intuitive interface with real-time feedback.
+**CalcVoice** is a modern and responsive voice-enabled calculator. It supports both **voice commands** and **speech feedback**, allowing users to calculate hands-free while adjusting settings like theme and precision. Designed with accessibility in mind, it’s a great tool for all ages and users.
 
-## Getting Started
+---
 
-### Prerequisites
-Make sure you have the following installed on your computer:
-- [Node.js](https://nodejs.org/) (version 12 or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
+## 🎥 Demo Video
 
-### Installing
+📺 **Watch the walkthrough here:**  
+[![CalcVoice - Demo Video](https://img.youtube.com/vi/NXP14eLXoQs/0.jpg)](https://youtu.be/NXP14eLXoQs)
 
-Follow these steps to get the project up and running:
+> 🔗 *Click the image or [watch on YouTube](https://youtu.be/NXP14eLXoQs)*
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/Shristirajpoot/CalcVoice.git
-2. Navigate to the project directory
-   cd CalcVoice
-3. Install the required dependencies
-   npm install
-   Running the App
+---
 
-Once the installation is complete, you can start the app locally:
-   npm start
-   
-This will start the app in development mode and open it in your default browser at http://localhost:3000.
 
-The page will reload automatically when you make changes to the source code. Any lint errors will also appear in the console.
+## 🎨 Features
 
-Usage
-Open the app in your browser.
-Click on the microphone icon or press a key to start giving voice commands.
-Example voice commands:
-"Add 5 and 10"
-"Multiply 8 by 3"
-"What is 100 divided by 4?"
-"Subtract 25 from 50"
-The app will calculate the result and display it. It will also read the result out loud if voice feedback is enabled.
-How to Contribute
-We welcome contributions to the project! Here's how you can contribute:
+- 🎤 Voice command input via Web Speech API
+- 🗣️ Voice result feedback using `speechSynthesis`
+- 🌗 Light/Dark theme toggle
+- 🧮 Smart math support: sin, cos, tan, sqrt, power
+- 📝 History of recent 5 calculations
+- ⚙️ Settings panel with customizable voice & precision
+- 📱 Fully responsive design
+- 🔧 Built using React with functional components
 
-Fork the repository
-Create a new branch (git checkout -b feature-branch)
-Make your changes and commit them (git commit -am 'Add new feature')
-Push your changes to your fork (git push origin feature-branch)
-Open a pull request from your fork to the main branch of the original repository
-Feel free to open an issue for bug reports or feature requests. Your contributions are greatly appreciated!
+---
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📂 Project Structure
 
-Acknowledgments
-Create React App for bootstrapping the project.
-React Speech Recognition for enabling voice recognition.
-Chart.js for data visualization (if you're using charts in the app).
-Inspiration and guidance from the open-source community and React developers.
-Thank you for checking out the Voice Calculator! Feel free to star the repo and share it with others if you find it useful!
+```plaintext
+calcvoice/
+├── public/               # Static assets and index.html
+│
+├── src/                  # Main source code
+│   ├── App.js            # Main App with routes
+│   ├── Calculator.js     # Core calculator logic and UI
+│   ├── Settings.js       # Theme, voice, and precision settings
+│   ├── Instructions.js   # Help and user guidance
+│   ├── About.js          # Info about CalcVoice
+│   └── index.js          # React entry point
+│
+├── Screenshot 2025-06-11 122432.png
+├── Screenshot 2025-06-11 122447.png
+├── Screenshot 2025-06-11 122507.png
+├── Screenshot 2025-06-11 122525.png
+├── Screenshot 2025-06-11 122547.png
+├── Screenshot 2025-06-11 122600.png
+├── Screenshot 2025-06-11 122612.png
+├── Screenshot 2025-06-11 122628.png
+├── Screenshot 2025-06-11 122649.png
+├── package.json
+├── package-lock.json
+├── README.md
+└── .gitignore
+```
+## 🖼️ Screenshots
+> 📸 Real views of the CalcVoice website:
 
-### Key Changes:
-- Added a **badge** for stars on GitHub.
-- Added a **Table of Contents** to navigate sections easily.
-- Expanded on **Features** and **Usage** to make it clearer for new users.
-- Included a **How to Contribute** section to encourage contributions.
-- Provided a section for **License** to clarify licensing.
+ | 🏠Developer Page                                           | 🚀Responsive Design                                       |
+| ------------------------------------------------------ | ------------------------------------------------------ |
+| ![Screenshot1](./Screenshot%202025-06-11%20122649.png) | ![Screenshot2](./Screenshot%202025-06-11%20122447.png) |
 
-This README should make your project look more polished and help others understand how to use, contribute, and interact with your project. It also encourages people to star your repository.
+
+
+| 👤 Command Examples                                       | ⭐ Setting Page                                          |
+| ------------------------------------------------------ | ------------------------------------------------------ |
+| ![Screenshot3](./Screenshot%202025-06-11%20122507.png) | ![Screenshot4](./Screenshot%202025-06-11%20122525.png) |
+
+| 🎁 Calculator Interface                                         | 👤 Instructions Page                                        |
+| ------------------------------------------------------ | ------------------------------------------------------ |
+| ![Screenshot5](./Screenshot%202025-06-11%20122547.png) | ![Screenshot6](./Screenshot%202025-06-11%20122600.png) |
+
+| 🛍️ About Page                                       | 🧺 Theme Toggle                                           |
+| ------------------------------------------------------ | ------------------------------------------------------ |
+| ![Screenshot7](./Screenshot%202025-06-11%20122612.png) | ![Screenshot8](./Screenshot%202025-06-11%20122628.png) |
+
+| 🌐 Full Website View                                   |
+| ------------------------------------------------------ |
+| ![Screenshot9](./Screenshot%202025-06-11%20122432.png) |
+
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Install Dependencies
+
+```bash
+npm install
+▶️ Start Development Server
+
+npm start
+```
+🌐 Visit http://localhost:3000 to see the website live.
+
+
+## 🔈 Supported Voice Commands
+
+| Command                   | Action                        |
+|---------------------------|-------------------------------|
+| "Clear" / "Reset"         | Clears the calculator display |
+| "Delete last"             | Deletes the last character    |
+| "5 plus 2"                | Performs addition             |
+| "10 divided by 5"         | Performs division             |
+| "Square root 25"          | Calculates √25                |
+| "2 to the power 3" / "2 ^ 3" | Calculates 2³                |
+| "Sin 30", "Cos 60", "Tan 45" | Trigonometric functions     |
+
+
+## 🛠️ Built With
+
+
+- ⚛️ React.js
+  
+- 🗣️ Web APIs: SpeechRecognition & SpeechSynthesis
+
+- 💡 Functional Components & Hooks
+
+- 📦 npm / Node.js
+  
+- 🎨 Tailwind CSS
+
+
+## 👩‍💻 Author
+### Shristi Rajpoot
+- 📧 Email: shristirajpoot369@gmail.com
+- 🔗 GitHub: @Shristirajpoot
+
+## 📄 License
+This project is licensed under the MIT License.
+
+### 🌟 If you liked this project, consider starring the repo and sharing it!
